@@ -26,7 +26,7 @@ def LascarTtest_p1(trace_path0, trace_path1):
         return None
     #!vmtouch -e husky_attack_data.h5
 
-    ttest_engine = TTestEngine(partition_function)
+    ttest_engine = TTestEngine(name= "ttest_benchmark", partition_function=partition_function)
     containers = [container1, container2]
 
     # We choose here to plot the resulting curve

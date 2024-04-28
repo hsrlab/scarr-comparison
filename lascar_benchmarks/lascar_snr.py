@@ -25,7 +25,7 @@ def LascarSNR_p1(trace_path):
 
     number_of_partitions = 256  # number of possible classes (~output of the partiton_function) for the partition_function
     snr_engine = SnrEngine(
-        partition_function, range(number_of_partitions), name="snr_benchmark"
+        partition_function=partition_function, partition_range=range(number_of_partitions), name="snr_benchmark"
     )
 
     # We choose here to plot the resulting curve
@@ -62,7 +62,7 @@ def LascarSNR_p2(trace_path):
     number_of_partitions = 256  # number of possible classes (~output of the partiton_function) for the partition_function
     snr_engines = [
         SnrEngine(
-            get_partition_function(i), range(number_of_partitions), name="snr_plaintext_%d" % i
+            partition_function=get_partition_function(i), partition_range=range(number_of_partitions), name="snr_plaintext_%d" % i
         )
         for i in range(16)
     ]
@@ -98,7 +98,7 @@ def LascarSNR_p3(trace_path):
 
     number_of_partitions = 256  # number of possible classes (~output of the partiton_function) for the partition_function
     snr_engine = SnrEngine(
-        partition_function, range(number_of_partitions), name="snr_benchmark"
+        partition_function=partition_function, partition_range=range(number_of_partitions), name="snr_benchmark"
     )
 
     # We choose here to plot the resulting curve
@@ -132,7 +132,7 @@ def LascarSNR_p4(trace_path):
 
     number_of_partitions = 256  # number of possible classes (~output of the partiton_function) for the partition_function
     snr_engine = SnrEngine(
-        partition_function, range(number_of_partitions), name="snr_benchmark"
+        partition_function=partition_function, partition_range=range(number_of_partitions), name="snr_benchmark"
     )
 
     # We choose here to plot the resulting curve
@@ -172,7 +172,7 @@ def LascarSNR_p5(trace_path):
 
     number_of_partitions = 256  # number of possible classes (~output of the partiton_function) for the partition_function
     snr_engine = SnrEngine(
-        partition_function, range(number_of_partitions), name="snr_benchmark"
+        partition_function=partition_function, partition_range=range(number_of_partitions), name="snr_benchmark"
     )
 
     # We choose here to plot the resulting curve
@@ -211,7 +211,7 @@ def LascarSNR_p6(trace_path):
 
     number_of_partitions = 256  # number of possible classes (~output of the partiton_function) for the partition_function
     snr_engine = SnrEngine(
-        partition_function, range(number_of_partitions), name="snr_benchmark"
+        partition_function=partition_function, partition_range=range(number_of_partitions), name="snr_benchmark"
     )
 
     # We choose here to plot the resulting curve
