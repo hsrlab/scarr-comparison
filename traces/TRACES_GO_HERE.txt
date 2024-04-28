@@ -1,0 +1,17 @@
+all traces go in this folder:
+
+benchmark_medium_sw_aes128.zarr
+benchmark_medium_sw_aes128_compressed.zarr
+benchmark_medium_sw_aes128-tvla0.zarr
+benchmark_medium_sw_aes128-tvla0_compressed.zarr
+benchmark_medium_sw_aes128-tvla1.zarr
+benchmark_medium_sw_aes128-tvla1_compressed.zarr
+benchmark_medium_sw_aes128.ets
+benchmark_medium_sw_aes128.h5
+benchmark_medium_sw_aes128.zets
+benchmark_medium_sw_aes128-tvla0.ets
+benchmark_medium_sw_aes128-tvla0.h5
+benchmark_medium_sw_aes128-tvla0.zets
+benchmark_medium_sw_aes128-tvla1.ets
+benchmark_medium_sw_aes128-tvla1.h5
+benchmark_medium_sw_aes128-tvla1.zets
